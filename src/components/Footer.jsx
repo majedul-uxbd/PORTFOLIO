@@ -1,4 +1,8 @@
 export default function Footer() {
+      const author = {
+    name: "Majedul",
+    href: "https://github.com/majedul-uxbd",
+  }
     return (
         <div className="mt-20">
             <div className="text-center">
@@ -15,7 +19,15 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-3">
-                <p>© {new Date().getFullYear()} <a href="https://prebuiltui.com" target="_blank"></a> • All rights reserved to Majedul.</p>
+                <p> {new Date().getFullYear()} • All rights reserved &nbsp;
+                <a
+                    className="text-muted-foreground hover:text-foreground hover:underline hover:underline-offset-4"
+                    href={author.href}
+                    target="_blank"
+                >
+                    {author.name}
+                </a>
+                </p>
                 <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
                     <li><a href="https://github.com/majedul-uxbd" target="_blank">GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/majedulb/">LinkedIn</a></li>
